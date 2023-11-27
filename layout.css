@@ -1,0 +1,29 @@
+@media (min-width: 800px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 200px);
+    gap: 10px;
+  }
+  img {
+    align-self: stretch;
+    object-fit: cover;
+  }
+
+  .sofa {
+    grid-row: 1 / span 4;
+    grid-column: 1 / span 1;
+  }
+
+  .gang {
+    grid-row: 1 / span 4;
+    grid-column: 2 / span 1;
+  }
+
+  .grid_1-1-1-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: repeat(4, 200px); */
+    gap: 10px;
+  }
+}
